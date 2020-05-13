@@ -1,5 +1,5 @@
 {
-  "name": "iniciandoNoBackEnd",
+  "name": "06-iniciandonobackend",
   "version": "1.0.0",
   "description": "Modulo back-end criação servidor, template engine, dados dinamicos.",
   "main": "server.js",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/LuisFernandoDeveloper/Modulo_Iniciando_Back-end_Rocketseat#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
