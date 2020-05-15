@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        {% block head %}
+            <title>Luis Fernando</title>
+            <link rel="stylesheet" href="/style.css">
+        {% endblock %}
+
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" href="/favicon.ico" type="x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/classes">Aulas recomendadas</a>
+            </div>
+        </header>
+        
+        {% block content %}
+
+        {% endblock %}
+
+    </body>
+</html>

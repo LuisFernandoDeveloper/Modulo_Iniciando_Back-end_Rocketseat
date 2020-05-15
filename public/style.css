@@ -93,6 +93,7 @@ header {
 
 .card {
     background-color: var(--color-rocket);
+    cursor: pointer;
 }
 
 .card_image-container img {
@@ -141,7 +142,7 @@ header {
     color: black;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 5px;
     cursor: pointer;
 }
 
