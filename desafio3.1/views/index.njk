@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 3-1</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="index.html">Sobre</a>
-            <a href="courses.html">Cursos</a>
-            <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
-            <a href="mailto:oi@rocketseat.com.br">Email</a>
-            <a href="tel:+5547992078767">Telefone</a>    
-        </div>
-    </header>
+{% extends "layout.njk" %}
 
-    {% block content %}
+{% block head %}
+    <title>Desafio 3-1 - home</title>
+{% endblock %}
 
-
-    {% endblock %}
+{%block content%}
     <section>
         <div id="conteudo">
             <img src="img/logo.jpg">           
@@ -44,5 +27,5 @@
             <a href="/">Facebook</a>
         </div>
     </section>
-</body>
-</html>
+
+{%endblock%}

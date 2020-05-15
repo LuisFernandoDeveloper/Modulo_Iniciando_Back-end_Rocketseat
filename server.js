@@ -16,7 +16,7 @@ server.get("/", function(req, res){
 })
 
 server.get("/classes", function(req, res){
-    return res.render("classes.html")
+    return res.render("classes")
 })
 
 server.listen(5000, function(){
