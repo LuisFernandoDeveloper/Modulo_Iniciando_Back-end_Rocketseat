@@ -163,9 +163,10 @@ iframe {
 }
 
 /* === FEATURED === */
-.card_image-container {
+.featured-wrapper.card_image-container {
     position: relative;
 }
+
 .featured {
     background: #f7d05f;
     border-radius: 16px;
