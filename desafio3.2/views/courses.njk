@@ -2,7 +2,7 @@
 
 {% block head %}
 
-        <title>Desafio 3-1 - cursos</title>
+        <title>Desafio 3-2 - cursos</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
@@ -13,54 +13,21 @@
             <h1>Aulas Recomendadas</h1>
         </div>
         <section class="cards">
-
-            <div class="card" id="starter">
-                <div class="card_image-container">
-                    <img src="img/logostarter.jpg" alt="Starter">
-                </div>
-                <div class="card_content">
-                    <h2>Starter</h2>
-                </div>
-                <div class="card_info">
-                    <p>5 Modulos</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
-
-            <div class="card" id="launchbase">
-                <div class="card_image-container2">
-                    <img src="img/logolaunchbase.png" alt="Launchbase">
-                </div>
-                <div class="card_content">
-                    <h2>Launchbase</h2>
-                </div>
-                <div class="card_info">
-                    <p>10 Modulos</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
-
-            <div class="card" id="gostack">
+        {% for course in courses %}
+            <div class="card" id="{{course.id}}">
                 <div class="card_image-container3">
-                    <img src="img/logogoStack.PNG" alt="GoStack">
+                    <img src="{{course.url}}" alt="{{course.name}}">
                 </div>
                 <div class="card_content">
-                    <h2>GoStack</h2>
+                    <h2>{{course.name}}</h2>
                 </div>
                 <div class="card_info">
-                    <p>13 Modulos</p>
-                    <p class="card_price">Free</p>
+                    <p>{{course.module}}</p>
+                    <p class="card_price">{{course.price}}</p>
                 </div>
             </div>
-
+        {% endfor %}
         </section>
-
-        </div>
-        <div id="links-footer" class="links">
-            <a href="/">GitHub</a>
-            <a href="/">Instagram</a>
-            <a href="/">Facebook</a>
-        </div>
 
         <div class="modal-overlay">
             <div class="modal">
