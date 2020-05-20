@@ -9,7 +9,8 @@ module.exports = [
         id: "EhnXaybirdA",
         title: "Criando um projeto do zero para seu portfólio | Masterclass #14",
         durarion: "45 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "KISMYYXSIX8",
@@ -27,7 +28,8 @@ module.exports = [
         id: "mxIhSTP6ddE",
         title: "Utilizando UX para projetar uma aplicação do zero | Masterclass #09",
         duration: "79 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "eSjFDWYkdxM",
