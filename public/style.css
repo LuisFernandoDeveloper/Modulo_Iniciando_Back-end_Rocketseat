@@ -176,3 +176,10 @@ iframe {
     right: 5px;
     top:131px;
 }
+
+/* === VIDEO PAGE === */
+
+.video {
+    margin: 0 auto;
+    max-width: 80%;
+}
