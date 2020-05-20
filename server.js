@@ -33,6 +33,12 @@ server.get("/classes", function(req, res){
     return res.render("classes", {items: videos})
 })
 
+server.get("/video", function(req, res){
+    const id = req.query.id
+
+    res.send(id)
+})
+
 server.listen(5000, function(){
     console.log("server is running")
 })
