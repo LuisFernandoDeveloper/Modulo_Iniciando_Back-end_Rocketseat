@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Desafio 3-2 - home</title>
+{% endblock %}
+
+{%block content%}
+    <section>
+        <div id="conteudo">
+            <img src="{{data.logo}}">           
+
+            <h1>{{data.company}}</h1>
+
+            <h2>{{data.phrase}}</h2>
+
+            <p>{{data.description}}</p>
+
+            <ul>
+                {% for course in data.courses %}
+                    <li>{{course.name}}</li>
+                {%endfor%}
+            </ul>
+        </div>    
+
+{%endblock%}
+</section>
